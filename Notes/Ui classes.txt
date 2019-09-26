@@ -1,0 +1,15 @@
+ui general
+ui will just be images really just have SDL_Textures* and will access extern our player and such
+
+-Playerui class-
+ui at bottom of screen always shows
+(player health bar will be shown in player class probably)
+
+-shopui class-
+the shope ui when you open the store
+need to have background then we have item slots saved with scrollbar based on how many we have
+then if you click it shows the new images generated
+
+-targetui class-
+the ui of the enemy minion or champ you target only turns on when you click them
+

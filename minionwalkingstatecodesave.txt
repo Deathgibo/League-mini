@@ -1,0 +1,112 @@
+/*	if (minion.BotSide)
+		{
+			minion.MapPosition.x++;
+			minion.MapPosition.y += minion.minionmidlane.GetEdgeSlope();
+		}
+		else
+		{
+			minion.MapPosition.x--;
+			minion.MapPosition.y -= minion.minionmidlane.GetEdgeSlope();
+		}*/
+
+	/* method one where you just have a permanent line within the player circle you check if it collides with the main line quick but dont know which dir to go
+	Edge minionedge;
+	minionedge.p1.x = minion.MapPosition.x - minion.VisionRanged;
+	minionedge.p1.y = minion.MapPosition.y - -minion.VisionRanged / minion.minionmidlane.GetEdgeSlope();
+	minionedge.p2.x = minion.MapPosition.x + minion.VisionRanged;
+	minionedge.p2.y = minion.MapPosition.y + -minion.VisionRanged / minion.minionmidlane.GetEdgeSlope();
+	double distance = sqrt(pow(minionedge.p1.x - minion.MapPosition.x, 2) + pow(minionedge.p2.y - minion.MapPosition.y, 2));
+	double angle = acos((minion.MapPosition.x - minionedge.p1.x) / distance);
+	minionedge.p1.x = minion.VisionRanged*cos(angle) + minion.MapPosition.x;
+	minionedge.p1.y = minion.VisionRanged*sin(angle) + minion.MapPosition.y;
+	angle += 3.14;
+	minionedge.p2.x = minion.VisionRanged*cos(angle) + minion.MapPosition.x;
+	minionedge.p2.y = minion.VisionRanged*sin(angle) + minion.MapPosition.y;
+	SDL_RenderDrawLine(grender, minionedge.p1.x - themap.PlayerCamera.x, minionedge.p1.y - themap.PlayerCamera.y, minionedge.p2.x - themap.PlayerCamera.x, minionedge.p2.y - themap.PlayerCamera.y);
+
+	myglobal global;
+	if (global.checktwolinecollision(minion.minionmidlane.p1, minion.minionmidlane.p2, minionedge.p1, minionedge.p2))
+	{
+		withinrange = true;
+	}
+	else
+	{
+		withinrange = false;
+
+	}*/
+
+	/*double closestdistance = 1000000;
+	double closestminion = 2000000;
+	double closesttower = 2000000;
+	double closestplayer = 2000000;
+	/*if theres a minion in range switch to attacking it
+	for (int i = 0; i < minions.size(); i++)
+	{
+		if (minion.MapPosition != minions[i].MapPosition && minion.BotSide != minions[i].BotSide)
+		{
+			double d = pow(minion.MapPosition.x - minions[i].MapPosition.x, 2) + pow(minion.MapPosition.y - minions[i].MapPosition.y, 2);
+			if (d < pow(minion.AttackRange, 2))
+			{
+				if (d < closestdistance)
+				{
+					closestdistance = d;
+					closestminion = d;
+					minion.miniontarget = &minions[i];
+					//return new AttackingMinionState();
+				}
+			}
+		}
+	}
+	closestdistance = 1000000;
+	/*if theres a tower in range switch to attacking it
+	for (int i = 0; i < towers.size(); i++)
+	{
+		if (minion.BotSide != towers[i].BotSide && towers[i].alive)
+		{
+			double d = pow(minion.MapPosition.x - towers[i].MapPosition.x, 2) + pow(minion.MapPosition.y - towers[i].MapPosition.y, 2);
+			if (d < pow(minion.AttackRange,2))
+			{
+				if (d < closestdistance)
+				{
+					closestdistance = d;
+					closesttower = d;
+					minion.towertarget = &towers[i];
+					//return new AttackingTowerState();
+				}
+			}
+		}
+	}
+	closestdistance = 1000000;
+	/*if the player is in range switch to attacking it
+	if (minion.BotSide != theplayer.BotSide)
+	{
+		double d = pow(minion.MapPosition.x - theplayer.MapPosition.x, 2) + pow(minion.MapPosition.y - theplayer.MapPosition.y, 2);
+		if (d < pow(minion.AttackRange, 2))
+		{
+			if (d < closestdistance)
+			{
+				closestdistance = d;
+				closestplayer = d;
+				minion.playertarget = &theplayer;
+				//return new AttackingPlayerState();
+			}
+		}
+	}
+	if (closestplayer < closestminion && closestplayer < closesttower)
+	{
+		minion.miniontarget = 0;
+		minion.towertarget = 0;
+		return new AttackingPlayerState();
+	}
+	if (closestminion < closestplayer && closestminion < closesttower)
+	{
+		minion.playertarget = 0;
+		minion.towertarget = 0;
+		return new AttackingMinionState();
+	}
+	if (closesttower < closestplayer && closesttower < closestminion)
+	{
+		minion.miniontarget = 0;
+		minion.playertarget = 0;
+		return new AttackingTowerState();
+	}*/

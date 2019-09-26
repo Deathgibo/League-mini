@@ -1,0 +1,15 @@
+Create Polygons for hitboxes, etc
+Create Map, map movement, map hitboxes
+Create Player, player movement, playercollision
+Create store, items
+Create ui, pressing player abilities, getting items in store
+Create minions, minionvminion, playervminion, minionvtower, minion running and spawns
+Create Towers damage breaking
+create player auto attacking minions and towers
+create gold and stat system for player and items
+Create player abilities, summoner spells, cooldown implementation, animations
+game is done without combat
+Create jungle Minion, combat, damage, death
+create nexus winning, losing game
+create mini map and shortest math movement
+create main menu play mode and replay

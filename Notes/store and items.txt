@@ -1,0 +1,48 @@
+we just make an array of items and set all their stats then the store references all the array of items showing the image and stats, etc. If I add new items should just have to create it and everything else should work with it except maybe special ability.
+
+1 ad - infinity edge
+bf sword, pickaxe, cloak of agility
+1 ap - morrello
+blasting wand, oblivion orb, amplifying tome, ruby crystal
+1 attack speed - phantom dancer
+brawlers gloves, dagger, zeal
+1 mr - spirit visage
+spectres cowl kindlegem, ruby crystal,  null-mantle
+1 armor - randuin
+giants belt, ruby crystal, cloth armor, wardens mail
+1 heal - warmog
+giant belt, kindlegem, crystalline bracer, rejuve bead, ruby cyrstal
+boots
+
+each item holds what it needs to make it at the top level then we recursively call it down
+
+-store class-
+map of items and string as key
+images neccesarry
+
+
+-item class-
+string name
+vector<string> buildsinto
+vector<string> childrenitems
+SDL_Texture* image
+SDL_Texture* descriptionimage
+SDL_Texture* buyimage
+float AD
+float AP
+float MR
+float ARMOR
+float ATKSPEED
+float CRIT
+float CDR
+float HEALTHREGEN
+float HEALTH
+float MAGICPEN
+float MOVESPEED
+bool GREVIOUSWOUNDS
+bool UNIQUEPASSIVEPD
+bool UNIQUEPASSIVEIF
+bool UNIQUEPASSIVERO
+bool UNIQUEPASSIVEWA
+int COST
+int SELLCOST	

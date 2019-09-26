@@ -1,0 +1,7 @@
+player will have the playerabilities class that will handle all input and ability stuff it just needs to call it on update.
+
+the ability class will do the stuff and probably even hold variables to not clutter player
+
+the player will also have a state thing as well but just for stuns and silences and death
+so the player will have a state that does nothing, than a state if hes stunned, a state if hes dead, etc
+

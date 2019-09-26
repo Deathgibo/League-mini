@@ -1,0 +1,8 @@
+for champions and abilities use subclass sandbox, one parent class with functions like move, playsound, spawnparticle, that all the others have to use within its 1 sandbox function
+
+for game loop stuff probably group minions and jungle monster into entity class
+
+player input use command break commands into classes and pass around objects
+
+state for enemies, and towers, and maybe player
+

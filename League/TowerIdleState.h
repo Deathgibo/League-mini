@@ -1,0 +1,14 @@
+#pragma once
+#include "TowerState.h"
+
+class TowerIdleState : public TowerState
+{
+public:
+	TowerIdleState();
+	TowerState* handleinput(Tower& tower);//handles the input for the other states that state can go to
+	void update(Tower& tower);
+
+private:
+
+
+};

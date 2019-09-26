@@ -1,0 +1,25 @@
+enum TurretState {IDLE,ATTACK_PLAYER,ATTACK_MINION}
+
+IDLE -> ATTACK_PLAYER
+IDLE -> ATTACK_MINION
+ATTACK_PLAYER -> ATTACK_MINION
+ATTACK_PLAYER -> IDLE
+ATTACK_MINION -> ATTACK_PLAYER
+ATTACK_MINION -> IDLE
+
+handinput(input)
+switch(turretstate)
+{
+	case IDLE: break;
+	if(trigger == attackplayertrigger)
+	{
+		turretstate = ATTACK_PLAYER;
+	}	
+	case ATTACK_PLAYER: break;
+
+	case ATTACK_MINION: break;	
+
+
+
+
+}

@@ -1,0 +1,38 @@
+
+extern SDL_Renderer* grender;
+	extern Map themap;
+	extern int screenwidth;
+	extern int screenheight;
+
+	vector<Triangle> closetriangles;
+	int amount = screenwidth / 8;
+	myglobal global;
+	bool somethinghit = false;
+
+/*if (therealpolyindexone - i < 0)
+		{
+			int theindex = polygonhit->Vertices.size() + (therealpolyindexone - i);
+			if (!CollisionSeeIfPointCanHopOff(polygonhit->Vertices[theindex]))
+			{
+				partitionone.push_back(polygonhit->Vertices[theindex]);
+			}
+			else
+			{
+				partitionone.push_back(polygonhit->Vertices[theindex]);
+				break;
+			}
+			
+		}
+		else
+		{
+			int theindex = (therealpolyindexone - i) % polygonhit->Vertices.size();
+			if (!CollisionSeeIfPointCanHopOff(polygonhit->Vertices[theindex]))
+			{
+				partitionone.push_back(polygonhit->Vertices[theindex]);
+			}
+			else
+			{
+				partitionone.push_back(polygonhit->Vertices[theindex]);
+				break;
+			}
+		}*/

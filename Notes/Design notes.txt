@@ -1,0 +1,24 @@
+rendering will just be images, probably just take images from league or something
+map will probably be like a one lane thing with some camps maybe just copy middle lane of real map
+maybe 4 champions, darius, ashe,
+
+physics will be 2d with all polygons I can just use line physics tho like i did in engine
+or could pick 4 corner points of player and see if those points are inside polygon.
+
+minions will be coded, towers, jungle camps, minimap, clicking and shortest path, combat, some items
+will not be fps dependant it will time dependant and you can set fps
+this should be clean, organized code using generalites throughout to make easy
+
+-classes-
+map class: polygons, images
+ui class: images, click input, boxes, mouse
+^this class handles like all uis like clicking on minions and showing stats and mouse ui
+polygon: functions to support polygon
+player: hitbox polygon, stats, image, abilities, items
+minions: hitbox polygon, image, stats, movement script state machine
+jungle camp: hitbox polygon, image, stats, state machine script
+tower: hitbox polygon, range circle, stats, image, state machine script
+item: stats, images
+abilities: images, polygon hitbox,
+store: ui, items, click input
+

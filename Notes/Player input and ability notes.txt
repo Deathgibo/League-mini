@@ -1,0 +1,20 @@
+for player abillites use sandbox where I can code every ability pretty independant of things so its just an object out there i can use
+
+player input use commands  
+
+-player input-
+q ability
+w ability
+e ability
+r ability
+summoner spell 1 
+summoner spell 2
+passive
+item abilities
+q,w,e,r,d,f,1,2,3,4,5,6
+
+command class with inheritance for qcommand, wcommand, ecommand, etc
+then you pass in the player and it will execute his specific q command
+
+sandbox class with inheritance for every champion ability in game
+they all share sounds, animations, stat buffs for player, do damage to enemies

@@ -1,0 +1,10 @@
+-Ability base class-
+protected methods base classes can use
+
+-Ability subclass-
+inherit from base class, override activate method, and use base class protected methods
+
+-base class functions-
+play sound
+play animation
+show ability blue line
